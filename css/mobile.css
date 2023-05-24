@@ -1,0 +1,579 @@
+
+    /*/////////////////////////styles////////////////////////////////// */
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+    
+   
+    @media only screen and (max-width: 640px){
+
+    * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        box-sizing: border-box;
+    
+      }
+    
+      html{
+        font-size: 17px;
+      }
+    
+      body {
+        font-family: "Raleway", sans-serif;
+      width: 100%;
+      background: #fff;
+      }
+      
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      
+      h1, h2, h3, h4,p {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+    }
+      
+    h1 {
+      font-weight: 700;
+      font-size: 25px;
+      margin-top: 63px;
+      margin-left: 20px;
+      line-height: normal;
+    }
+    h2 {
+      font-size: 22px;
+      margin-left: -60px;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 6px;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 10px 0px 10px 26px
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;  
+      margin-bottom: 6px;
+    }
+    
+    a:hover {   
+      color: #000;
+    }
+    
+      .icon::before {
+        /* removed font- based rules */
+        display: inline-block;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+      }
+    
+      /* Step 2: Reference Individual Icons */
+      .locate::before {
+        /* using style CSS custom property */
+        font: var(--fa-font-solid);
+        content: "\f3c5";
+      }
+    
+      .align-horiz{
+        display: flex;
+      }
+    
+      .align-vert{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .align-wrap{
+        display: flex;
+      }
+
+      .star{
+        color: #0065FC;
+      }
+    
+    
+      .icon::before {
+        /* removed font- based rules */
+        display: inline-block;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+      }
+    
+      /* Step 2: Reference Individual Icons */
+      .info::before {
+        /* using style CSS custom property */
+        font: var(--fa-solid-info);
+        content: "\f129";
+      }
+    
+      
+    
+    
+      .hvr-grow-shadow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+      }
+      .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    
+    
+      .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+      }
+      .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    
+    
+    /*///////////////////header///////////////////*/
+ 
+    
+
+header img{
+  width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: -20px;
+}
+
+
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+margin-top: 50px;   
+margin: auto;  
+
+}
+
+.nav-bar ul{
+    display: flex;
+
+}
+
+.nav-bar li{
+    justify-content: space-around;
+    cursor: pointer;
+
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.nav-bar a:hover{
+    color: rgb(0, 187, 255);
+    padding-top: 5px;
+    border-top:2px solid #0065FC    ;
+    border-width: 50%;
+
+  }
+
+
+.search-nav h2{
+font-size: 17px;
+font-weight: 400;
+font-style: normal;
+line-height: 20px;
+text-align:center;
+}
+
+/*barre de recherche*/
+
+.search-bar{
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  
+  .search-bar .map {
+    display: flex;
+  }
+  
+  .search-bar .fa-map-marker-alt {
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 112%
+  }
+  
+  .search-bar input {
+    height: 50px;
+    width: 230px;
+    border: #f2f2f2 1px solid;
+    font-weight: 600;
+    font-size: 119%;
+  }
+  
+  .search-bar input::placeholder{
+    color: black;
+    padding-left: 20px; 
+    font-family:'Raleway';
+  }
+  
+  .search-bar .search {
+    border-radius: 0 10px 10px 0;
+    height: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    background-color: #0065fc;
+    cursor: pointer;
+  }
+  
+  .fa-search{
+    color: transparent;
+  }
+  
+
+
+
+
+    /*FILTRES*/
+
+    
+
+    .section-filters{
+        margin-top: 35px;
+        display:flex;
+margin-left: 20px;
+cursor: pointer;
+
+    }
+
+    .section-filters h3{
+        font-size: 20px;
+        margin-left: 15px;
+        position: relative;
+        top: -170px;
+    }
+
+    .section-filters ul{
+        display: flex;
+position: relative;
+flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 20px;
+        gap: 50px;
+        left: -100px;
+        top: 40px;
+        }
+
+    .section-filters li{
+        margin-left: 80px;
+       transition: 0.9;
+       border: 2px solid #d9d9d9;
+       border-radius: 25px;
+       width: 170px;
+       margin: 0px 0px 0 10px;
+       padding: 15px 15px 15px 15px;
+    }
+
+    .section-filters p{
+        width: 100px;
+        height: 20px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        color: #000000;
+        position: relative;
+        left: 30px;
+        top: 15px;
+}
+
+.section-filters i{
+    position: relative;
+    width:20px ;
+    height: 20px;
+    color: #0065FC;
+    font: var(--fa-font-solid);
+
+}
+
+
+
+  
+.info-part{
+  margin-top: 30px;
+  
+}
+
+.info-part p{
+  font-size: 12px;  
+  }
+  
+
+.fa-info{
+   
+      border: 1px solid black;
+      border-radius: 50%;
+      padding: 7px 10px 7px 10px;
+    
+}
+
+ 
+
+
+/*//////////////////////articles//////////////////////*/
+    
+.align-hor {
+    display: flex;
+}
+.align-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-content: center;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.align-vert {
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    margin: 0px 10px 0px 15px;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 10px -3px rgba(120, 60, 60, 0.67);
+    -webkit-box-shadow: 0px 0px 10px -3px rgb(0 0 0 / 67%);
+    -moz-box-shadow: 0px 0px 10px -3px rgb(0 0 0 / 67%);
+}
+
+ /* structure */
+
+
+main {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+ 
+ #accommodation {
+    position: relative;
+    width: 1500px;
+    height: 1470px;
+    background: #F2F2F2;
+    border: 1px #FFF solid;
+    border-radius: 50px;
+    padding: 10px 0px 30px 28px;
+    margin-right: 40px;
+    
+}
+#accommodation h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 23px;
+    margin-left:auto;
+
+}
+#accommodation h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 20px;
+}
+#accommodation article {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    width: 400px;
+    height: 199px;
+    margin: 0px 20px 30px 0px;
+}
+#accommodation img {
+    border: 5px solid #fff;
+    border-radius: 20px 20px 0 0;
+    width: 400px;
+    height: 124px;
+    object-fit: cover;
+}
+#popular-accommodation {
+    width: 420px;
+    background: #F2F2F2;
+    border-radius: 50px;
+    height: 625px;
+    border: 1px #FFF solid;
+    padding: 10px 0px 30px 28px;
+    margin-top: 150px;
+}
+#popular-accommodation h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 23px;
+    margin-left: auto;
+}
+#popular-accommodation article {
+    background: #fff;
+    border: 1px solid #fff;
+    margin: 0px 0px 25px 5px;
+    border-radius: 20px;
+    width: 343px;
+    height: 144px;
+    padding: 5px;
+}
+#popular-accommodation img {
+    position: relative;
+    border-radius: 20px 0 0 20px;
+    width: 137px;
+    height: 132px;
+    object-fit: cover;
+}
+
+#popular-accommodation h3 {
+position: relative;
+left: 10px;
+font-size: 14px;
+top: 10px;
+}
+
+#popular-accommodation p{
+  position: relative;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+
+}
+
+#popular-accommodation .star{
+  position: relative;
+  left: 10px;
+  top: 20px;
+}
+
+ #activities {
+    width: 100%;
+}
+
+
+
+#activities h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#activities article {
+   margin-left: 20px;
+display: flex;
+flex-direction: column;
+}
+
+#activities article div {
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+
+#activities article img {
+    border-radius: 20px 20px 0 0;
+    width: 400px;
+    height: 150px;
+    object-fit: cover; 
+    
+}
+
+ #propos {
+    display: flex;
+    justify-content: flex-start;
+    
+   
+    background:#F2F2F2;
+    
+}
+
+
+#propos h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    margin-top: 44px;
+    position: relative;
+    left: 10px;
+}
+#propos nav {
+  flex-direction: column;
+  display: flex;
+    margin-top: 15px; 
+    position:relative;
+left: 50px;
+  }
+#propos li {
+    
+    margin-bottom: 12px;
+}
+#propos li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 19px;
+}
+#propos li a:hover {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer; 
+    color: #0065FC;
+}
+
+
+
+
+
+
+
+/*/////////////footer//////////////*/
+
+
+}
